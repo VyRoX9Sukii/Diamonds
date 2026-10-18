@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<Head><title> Free diamonds </title>
+<style>
+   body{ background-image:url("https://www.u7buy.com/blog/wp-content/uploads/2024/09/image-8.png"); backgroundsize:cover;}
+   select{ border=3; width:300px; height:40px; fontsize:18px; padding:10px;}
+   button{width:150px; height:40px; fontsize:18px; background-color:blue;}
+</style>
+</head>
+<body>
+<p> <h1><I><center>WELCOME TO THE ULTIMATE OFFER PAGE</center></I></h1></p>
+<form align=center
+onsubmit="showMessage(event)">
+   <h2>FREE FIRE ID:<input type="text" id="playerID" required></h2>
+ 
+   <label for="diamonds"><h2>HOW MANY DIAMONDS YOU NEED:</h2></label>
+
+   <select id=diamonds name="diamonds">
+            <option value="2000">2000</option>
+            <option value="3000">3000</option>
+  	    <option value="4000">4000</option>
+	    <option value="5000">5000</option>
+            <option value="6000">6000 </option>
+	
+</select>
+	<h2>EMAIL ID:<input type="text" required></h2>
+<button type="submit"> SUBMIT</button>
+</form>
+
+<script>
+function showMessage(event) {
+    event.preventDefault();
+    const playerID = document.getElementById("playerID").value;
+
+    const diamonds = document.getElementById("diamonds").value;
+
+    alert("Submitted successfully! FREE FIRE ID: " + playerID+" has been credited with"+diamonds+"diamonds");
+}
+</script>
+</body>
+</html>
